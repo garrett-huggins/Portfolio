@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import blockPattern from "/src/assets/images/block-pattern.png";
 
 const Stack = () => {
   return (
@@ -11,16 +12,9 @@ const Stack = () => {
       <div
         className="px-8 pb-40"
         style={{
-          backgroundImage:
-            "linear-gradient(180deg, rgba(217,217,217,1) 0%, rgba(217,217,217,0) 100%), url('/src/assets/images/block-pattern.png')",
+          backgroundImage: `linear-gradient(180deg, rgba(217,217,217,1) 0%, rgba(217,217,217,0) 100%), url(${blockPattern})`,
         }}
       >
-        <div
-          style={{
-            backgroundImage:
-              "linear-gradient(180deg, rgba(217,217,217,1) 0%, rgba(217,217,217,0) 100%), url('/src/assets/images/block-pattern.png')",
-          }}
-        ></div>
         <div className="h-[80px] w-full"></div>
         <div className="flex">
           <div className="">
