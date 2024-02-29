@@ -7,13 +7,14 @@ import Blog from "./components/sections/Blog";
 import Stack from "./components/sections/Stack";
 import Footer from "./components/sections/Footer";
 import blockPattern from "/src/assets/images/block-pattern.png";
+import plussPattern from "/src/assets/images/plus-pattern.png";
 
 function App() {
   return (
     <main
       className="font-poppins"
       style={{
-        backgroundImage: "url('/src/assets/images/plus-pattern.png')",
+        backgroundImage: `url(${plussPattern})`,
         backgroundRepeat: "repeat",
       }}
     >
