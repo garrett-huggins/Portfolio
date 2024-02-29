@@ -14,8 +14,8 @@ const Projects = () => {
             A locally installed CLI package for starting projects the quick way.
             Create your own project templates and use them to start new projects
             with ease. This package also includes a utility function to create
-            template inputs for you{" "}
-            <code className="bg-primary rounded-[5px] px-1">package.json</code>.{" "}
+            template inputs for your{" "}
+            <code className="rounded-[5px] bg-primary px-1">package.json</code>.{" "}
             Built using Node.js and TypeScript.
           </p>
           <div className="mt-2">
