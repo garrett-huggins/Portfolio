@@ -9,7 +9,12 @@ const About = () => {
       }}
       id="about"
     >
-      <div>
+      <div
+        style={{
+          background:
+            "radial-gradient(circle at 50% 50%,rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))",
+        }}
+      >
         <h2 className="text-heading-3 font-medium">About</h2>
         <ul className="space-y-4 text-body-1">
           <li>
