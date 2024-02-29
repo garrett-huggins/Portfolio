@@ -1,16 +1,17 @@
+import blockPattern from "/src/assets/images/block-pattern.png";
+
 const About = () => {
   return (
     <section
       className="bg-accent px-8 pb-[140px] text-black"
       style={{
-        backgroundImage:
-          "linear-gradient(0deg, rgba(217,217,217,0.8) 0%, rgba(217,217,217,0.8) 100%), url('/src/assets/images/block-pattern.png')",
+        backgroundImage: `linear-gradient(0deg, rgba(217,217,217,0.8) 0%, rgba(217,217,217,0.8) 100%), url(${blockPattern})`,
       }}
       id="about"
     >
       <div>
         <h2 className="text-heading-3 font-medium">About</h2>
-        <ul className="text-body-1 space-y-4">
+        <ul className="space-y-4 text-body-1">
           <li>
             I'm a software developer with 3+ years of experience and I enjoy
             working with the latest technologies.
