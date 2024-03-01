@@ -32,12 +32,13 @@ const Stack = () => {
               <AccordionContent className="mb-4 rounded-xl bg-accent p-6 text-black">
                 <ul className="list-inside list-disc space-y-4 text-body-1">
                   <li>React</li>
+                  <li>React Native</li>
                   <li>Next.js</li>
+                  <li>Expo</li>
                   <li>Vite</li>
                   <li>Astro</li>
                   <li>TailwindCSS</li>
                   <li>SCSS</li>
-                  <li>Framer Motion</li>
                 </ul>
               </AccordionContent>
             </AccordionItem>
@@ -70,9 +71,9 @@ const Stack = () => {
                   <li>Express</li>
                   <li>Supabase</li>
                   <li>PostgreSQL</li>
+                  <li>FastAPI</li>
                   <li>Prisma</li>
                   <li>GraphQL</li>
-                  <li>REST</li>
                 </ul>
               </AccordionContent>
             </AccordionItem>
