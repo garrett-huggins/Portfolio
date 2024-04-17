@@ -4,7 +4,7 @@ const Page404 = () => {
   // 404 Page
   // image center of screen
   return (
-    <main className="flex h-screen items-center justify-center bg-accent text-black">
+    <main className="flex min-h-screen items-center justify-center bg-accent text-black">
       <div>
         <img
           src={Image404}
