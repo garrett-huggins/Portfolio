@@ -12,8 +12,9 @@ const Page404 = () => {
           className="aspect-square w-full max-w-96"
         />
         <div className="text text-center text-gray-700">
-          <p>Looks like I forgot something...</p>
-          <p>Oh well, must not be that important.</p>
+          <h1 className="text-2xl font-bold">404</h1>
+          <p>Looks like I forgot something.</p>
+          <p>Oh well, must not be important.</p>
         </div>
       </div>
     </main>
