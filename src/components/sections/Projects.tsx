@@ -29,7 +29,7 @@ const Projects = () => {
         <img
           src={noteDemo}
           alt="Cardlet demo"
-          className="mx-auto max-w-[300px] rounded-xl"
+          className="mx-auto w-full max-w-[300px] rounded-xl"
         />
         <div>
           <p className="text-3xl font-medium">Template CLI (tcli)</p>

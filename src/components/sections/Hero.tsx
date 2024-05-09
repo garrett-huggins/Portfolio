@@ -7,14 +7,14 @@ const Hero = () => {
       <div className="">
         <div className="grid-cols-2 sm:grid">
           <div>
-            <h2 className="text-heading-1 from-accent bg-gradient-to-r to-[#999999] bg-clip-text font-medium text-transparent">
+            <h2 className="bg-gradient-to-r from-accent to-[#999999] bg-clip-text text-heading-1 font-medium text-transparent">
               Welcome
             </h2>
             <p className="text-body-1">
               Hello! I'm Garrett Huggins and I like to build things. I'm a
               software developer with a passion for bringing ideas to life.
             </p>
-            <div className="mt-4 space-x-3 text-sm">
+            <div className="mt-4 flex flex-wrap gap-x-3 gap-y-3 text-sm">
               <LinkBadge
                 link="https://github.com/garrett-huggins"
                 title="GitHub"
@@ -31,7 +31,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="mx-auto mt-10 flex items-center justify-center sm:mt-0">
-            <div className="to-background from-accent overflow-hidden rounded-3xl bg-gradient-to-b">
+            <div className="overflow-hidden rounded-3xl bg-gradient-to-b from-accent to-background">
               <img src={avatar} alt="avatar" className=" h-60 w-60 " />
             </div>
           </div>
