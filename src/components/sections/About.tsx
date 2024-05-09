@@ -10,28 +10,30 @@ const About = () => {
       id="about"
     >
       <div
+        className="rounded-xl"
         style={{
           background:
-            "radial-gradient(circle at 50% 50%,rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))",
+            "radial-gradient(circle at 50% 50%,rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0))",
         }}
       >
         <h2 className="text-heading-3 font-medium">About</h2>
         <ul className="space-y-4 text-body-1">
           <li>
-            I'm a software developer with 3+ years of experience and I enjoy
-            working with the latest technologies.
+            I'm a Software Developer with a degree in Information Technology and
+            3+ years of experience in full-stack development. My work
+            specializes in creating innovative and scalable software solutions
+            using cutting-edge technologies like React, Next.js, and FastAPI.
           </li>
           <li>
-            I'm currently pursuing my undergraduate degree in Information
-            Technology with a concentration in application development.
+            I've had the opportunity to lead impactful projects and collaborate
+            with cross-functional teams to deliver high-quality software
+            products. I'm passionate about creating user-friendly applications
+            that solve real-world problems and provide value to users.
           </li>
           <li>
-            Besides working in the web, I'm also passionate about game
-            development and music.
-          </li>
-          <li>
-            I spend most of my time in the terminal or rummaging through
-            documentation.
+            I'm always looking for new opportunities to learn and grow as a
+            developer. I enjoy working on challenging projects that push me to
+            expand my skill set and explore new technologies.
           </li>
         </ul>
       </div>
