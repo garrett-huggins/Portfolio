@@ -1,8 +1,8 @@
 import { Route, BrowserRouter, Routes } from "react-router-dom";
-import Home from "./pages/home";
+import Home from "./pages/Home";
 import Page404 from "./pages/404";
 
-export const App = () => {
+export default function App() {
   return (
     <BrowserRouter>
       <Routes>
@@ -11,6 +11,4 @@ export const App = () => {
       </Routes>
     </BrowserRouter>
   );
-};
-
-export default App;
+}

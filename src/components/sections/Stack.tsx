@@ -1,87 +1,66 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import blockPattern from "/src/assets/images/block-pattern.png";
+import { FRONTEND } from "@/data/stack/frontend";
+import { PROGRAMMING } from "@/data/stack/progamming";
+import { BACKEND } from "@/data/stack/backend";
+import { StackCard } from "@/components/cards/stack-card";
+import { useState } from "react";
 
-const Stack = () => {
+export default function Stack() {
+  const [activeTab, setActiveTab] = useState<
+    "frontend" | "backend" | "programming"
+  >("frontend");
+
   return (
-    <section id="stack" className="text-black">
-      <div
-        className="px-8 pb-40"
-        style={{
-          backgroundImage: `linear-gradient(180deg, rgba(217,217,217,1) 0%, rgba(217,217,217,0) 100%), url(${blockPattern})`,
-        }}
-      >
-        <div className="h-[80px] w-full"></div>
-        <div className="flex">
-          <div className="">
-            <h2 className="pl-2 pr-6 text-heading-3 font-medium">Stack</h2>
+    <section id="stack" className="scroll-m-48 sm:scroll-m-0">
+      <div className="h-10 w-full"></div>
+      <div className="container text-body-1">
+        <h2 className="text-heading-2 font-medium underline decoration-secondary">
+          Stack
+        </h2>
+        <p>I have experience with the following technologies:</p>
+        <div className="h-10 w-full"></div>
+        <div className="overflow-hidden rounded-xl border-8 border-accent">
+          <div className="flex justify-between bg-accent/20">
+            <button
+              onClick={() => setActiveTab("frontend")}
+              className={
+                "w-full p-2 " +
+                (activeTab === "frontend"
+                  ? "bg-accent text-background"
+                  : "text-accent")
+              }
+            >
+              Frontend
+            </button>
+            <button
+              onClick={() => setActiveTab("backend")}
+              className={
+                "w-full p-2 " +
+                (activeTab === "backend"
+                  ? "bg-accent text-background"
+                  : "text-accent")
+              }
+            >
+              Backend
+            </button>
+            <button
+              onClick={() => setActiveTab("programming")}
+              className={
+                "w-full p-2 " +
+                (activeTab === "programming"
+                  ? "bg-accent text-background"
+                  : "text-accent")
+              }
+            >
+              Programming
+            </button>
           </div>
-          <div className="min-h-full w-full rounded-t-xl bg-background"></div>
-        </div>
-        <div className="h-[20px] w-full rounded-ss-xl bg-background"></div>
-        <div className="space-y-6 rounded-b-xl bg-background p-6 text-white">
-          <Accordion type="single" collapsible>
-            <AccordionItem value="frontend">
-              <AccordionTrigger>
-                <p className="mb-4 text-3xl font-medium">Frontend</p>
-              </AccordionTrigger>
-              <AccordionContent className="mb-4 rounded-xl bg-accent p-6 text-black">
-                <ul className="list-inside list-disc space-y-4 text-body-1">
-                  <li>React</li>
-                  <li>React Native</li>
-                  <li>Next.js</li>
-                  <li>Expo</li>
-                  <li>Vite</li>
-                  <li>Astro</li>
-                  <li>TailwindCSS</li>
-                  <li>SCSS</li>
-                </ul>
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
-          <Accordion type="single" collapsible>
-            <AccordionItem value="programming">
-              <AccordionTrigger>
-                <p className="mb-4 text-3xl font-medium">Programming</p>
-              </AccordionTrigger>
-              <AccordionContent className="mb-4 rounded-xl bg-accent p-6 text-black">
-                <ul className="list-inside list-disc space-y-4 text-body-1">
-                  <li>TypeScript</li>
-                  <li>JavaScript</li>
-                  <li>Java</li>
-                  <li>Python</li>
-                  <li>C#</li>
-                  <li>C++</li>
-                </ul>
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
-          <Accordion type="single" collapsible>
-            <AccordionItem value="backend">
-              <AccordionTrigger>
-                <p className="mb-4 text-3xl font-medium">Backend</p>
-              </AccordionTrigger>
-              <AccordionContent className="mb-4 rounded-xl bg-accent p-6 text-black">
-                <ul className="list-inside list-disc space-y-4 text-body-1">
-                  <li>Node.js</li>
-                  <li>Express</li>
-                  <li>Supabase</li>
-                  <li>PostgreSQL</li>
-                  <li>FastAPI</li>
-                  <li>Prisma</li>
-                  <li>GraphQL</li>
-                </ul>
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
+          <div className="bg-accent/10 p-4">
+            {activeTab === "frontend" && <StackCard stack={FRONTEND} />}
+            {activeTab === "backend" && <StackCard stack={BACKEND} />}
+            {activeTab === "programming" && <StackCard stack={PROGRAMMING} />}
+          </div>
         </div>
       </div>
     </section>
   );
-};
-
-export default Stack;
+}

@@ -17,13 +17,13 @@ export default {
         poppins: ["Poppins", "sans-serif"],
       },
       fontSize: {
-        "heading-1": ["clamp(2.5rem, 6.5vw, 6rem)"],
-        "heading-2": ["clamp(2.4rem, 8vw, 10rem)"],
-        "heading-3": ["clamp(2rem, 5vw, 2.75rem)"],
+        "heading-1": ["clamp(1rem, 6vw, 3rem)"],
+        "heading-2": ["clamp(2.4rem, 5vw, 3rem)"],
+        "heading-3": ["clamp(0.75rem, 5vw, 2rem)"],
         special: ["clamp(2rem, 4vw, 3.25rem)"],
         "works-title": ["clamp(1.25rem, 2vw, 1.5rem)"],
-        "body-1": ["clamp(1.1rem, 2vw, 1.3rem)"],
-        "body-2": ["clamp(1rem, 1.5vw, 1.5rem)"],
+        "body-1": ["clamp(1rem, 3vw, 1.2rem)"],
+        "body-2": ["clamp(0.75rem, 1.5vw, 1rem)"],
         "body-3": "1.1rem",
         "body-4": ["clamp(0.75rem, 3vw, 1rem)"],
       },
@@ -76,10 +76,19 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: 0 },
         },
+        "scroll-wave": {
+          "0%": {
+            backgroundPosition: "0 0", // Start from the left
+          },
+          "100%": {
+            backgroundPosition: "-500% 0", // Move the wave fully
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "wavey-scroll": "scroll-wave 10s linear infinite",
       },
     },
   },
